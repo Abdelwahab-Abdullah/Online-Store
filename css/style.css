@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #000000;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #ff3300;
+    position: absolute;
+    clip-path: circle(40% at right 75%);
+    z-index: -1;
+}
+
+
+.main-container {
+    width: 80%;
+    height: 80%;
+    background-color: #ffffff15;
+    border-radius: 20px;
+    
+}
+.main-container nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+nav .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+nav ul li a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+    font-size: 18px;
+    font-weight: 500;
+}
+nav ul li a:hover {
+    color: #ff3300;
+    border-bottom: 2px solid #ff3300 ;
+    transform: scale(1.3);
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 150px;
+}
+.content .text {
+    color: #fff;
+    width: 40%;
+}
+.content .text h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-left: 20px;
+    
+} 
+.content .text p {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 20px 0 20px 25px;
+    color: #ffffff8a;
+    text-transform: capitalize;
+}
+.content .images {
+    width: 40%;
+}
+.content .images img {
+    width: 350px;
+}
+
+section{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 150px;
+    padding: 50px;
+    border-radius: 50px;
+}
+section h3 {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.sec-men, .sec-kids{
+    background-color: #ffffff15;
+}
+.sec-women{
+    background-color: #ff3300;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.container .container-items {
+    padding: 20px;
+    text-align: center;
+    width: fit-content; 
+    margin: auto;
+    transition: 1s;
+    border: 2px solid transparent;
+    
+}
+.container .container-items:hover {
+    transform: scale(1.1);
+    background: #00000049;
+    border-radius: 20px;  
+}
+.container .container-items img {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+h4 {
+    font-size: 15px;
+    letter-spacing: 5px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 0px;
+    border-radius: 5px;
+}
+
+footer {
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 150px;
+    letter-spacing: 3px;
+    word-spacing: 1px;
+    color: #fff;
+}
+
+
+.card {
+    width: fit-content;
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 20px;
+    margin: auto;
+}
+  
+  /* for all social containers*/
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: #ff3300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    border-radius: 30px;
+}
+
+  /* instagram*/
+.containerOne:hover{
+    background-color: #860a42;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+}
+
+/* twitter*/
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+}
+
+/* linkdin*/
+.containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+}
+
+/* github*/
+.containerFour:hover {
+    background-color: #000000;
+    transition-duration: 0.3s;
+    transform: scale(1.2);
+}
+  
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+}
+  
+.socialSvg {
+    width: 17px;
+}
+  
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+  
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+  
+@keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+  
+
